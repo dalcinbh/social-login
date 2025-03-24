@@ -17,18 +17,35 @@ export const metadata: Metadata = {
   description: "Criando um fluxo de login social no next.js",
 };
 
+/**
+ * Root Layout Component
+ * This is the main layout component that wraps all pages
+ * It provides the basic HTML structure and metadata
+ */
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      {/* 
+        Head section with viewport and charset meta tags
+        These ensure proper rendering and touch behavior
+      */}
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Social Login Demo</title>
+      </head>
+      {/* 
+        Body section with Tailwind classes
+        antialiased - Smooths font rendering
+        min-h-screen - Ensures minimum height of 100vh
+      */}
+      <body className="antialiased min-h-screen">
         {children}
       </body>
     </html>
-  );
+  )
 }
