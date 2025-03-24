@@ -1,0 +1,12 @@
+object dd00c437b534a3b2df7865754e6e0b6928f573ae
+type commit
+tag v0.1.0
+tagger Adriano Alves Dal Cin Costa <adriano@agiliza.top>
+
+Versão 0.1.0 - Primeira versão estável com autenticação Google OAuth funcionando corretamente.
+
+Principais funcionalidades:
+- Login com Google OAuth configurado e funcionando
+- Redirecionamentos corrigidos
+- Dashboard com exibição de dados do usuário
+- Logout implementado
