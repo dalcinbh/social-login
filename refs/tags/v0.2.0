@@ -1,0 +1,6 @@
+object dd00c437b534a3b2df7865754e6e0b6928f573ae
+type commit
+tag v0.2.0
+tagger Adriano Alves Dal Cin Costa <adriano@agiliza.top>
+
+v0.2.0 - Complete social login module with Google, GitHub and LinkedIn
